@@ -1,3 +1,4 @@
+
 <!DOCTYPE html><html lang="pt-BR"><head>
 	<meta charset="UTF-8">
 		<title>BRAIP 02 – Martelo de Thor</title>
@@ -738,6 +739,7 @@ position: fixed;
 					<div class="elementor-widget-container">
 						<div class="elementor-spacer">
 				<div class="elementor-spacer-inner"></div>
+
 			</div>
 					</div>
 					</div>
@@ -745,8 +747,10 @@ position: fixed;
 			</div>
 						</div>
 			</section>
+
 					<section class="elementor-section elementor-top-section elementor-element elementor-element-2223a72 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2223a72" data-element_type="section" data-settings="{" background_background":"classic"}"="">
-								<div class="elementor-background-overlay"></div>
+							<img src="./Imagem do WhatsApp de 2024-12-10 à(s) 01.47.01_a1fd0859.jpg" alt="">	
+						<div class="elementor-background-overlay"></div>
 								<div class="elementor-container elementor-column-gap-default">
 						<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2445936b" data-id="2445936b" data-element_type="column">
 				<div class="elementor-widget-wrap elementor-element-populated">
@@ -756,7 +760,7 @@ position: fixed;
 				<div class="elementor-spacer-inner"></div>
 			</div>
 					</div>
-					</div>
+					</div> 
 					<div class="elementor-element elementor-element-126f82f1 elementor-widget elementor-widget-heading" data-id="126f82f1" data-element_type="widget" data-widget_type="heading.default">
 					<div class="elementor-widget-container">
 				<h2 class="elementor-heading-title elementor-size-default">Não há mais tempo para perder, <br>há apenas uma decisão para ser tomada... </h2>		</div>
@@ -1659,4 +1663,42 @@ position: fixed;
 	<script src="js/frontend.min_1.js" id="elementor-frontend-js"></script>
 	<script src="js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
 
-	</body></html>
+	<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
